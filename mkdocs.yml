@@ -1,0 +1,20 @@
+# The clang-retro website: https://clang-retro.github.io/
+# Each repository has its own site under it (/dos-sdk/, /win16-sdk/, ...).
+# Build it with `pip install -r .docs/requirements.txt` and `mkdocs serve`.
+INHERIT: .docs/base.yml
+site_name: clang-retro
+site_description: A current clang and LLVM for DOS, Windows, OS/2, classic Mac OS, AmigaOS and the Atari ST
+site_url: https://clang-retro.github.io/
+repo_url: https://github.com/clang-retro
+repo_name: clang-retro
+edit_uri: ""
+hooks:
+  - .docs/hooks.py
+
+extra:
+  retro:
+    github: clang-retro/clang-retro.github.io
+    branch: main
+
+nav:
+  - Home: index.md
