@@ -3,7 +3,7 @@
 # Build it with `pip install -r .docs/requirements.txt` and `mkdocs serve`.
 INHERIT: .docs/base.yml
 site_name: clang-retro
-site_description: A current clang and LLVM for DOS, Windows, OS/2, classic Mac OS, AmigaOS and the Atari ST
+site_description: A current clang and LLVM for DOS, Windows, OS/2, the Mac, AmigaOS, the Atari ST, CP/M, the 6502 and classic UNIX
 site_url: https://clang-retro.github.io/
 repo_url: https://github.com/clang-retro
 repo_name: clang-retro
@@ -18,3 +18,5 @@ extra:
 
 nav:
   - Home: index.md
+  - What is new: news.md
+  - softgl: softgl.md
